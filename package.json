@@ -1,12 +1,12 @@
 {
   "name": "hektar-yapi-site",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "live-server --port=3000 --open=index.html",
     "start": "live-server --port=3000 --open=index.html"
   },
   "devDependencies": {
-    "live-server": "latest"
+    "live-server": "^1.2.2"
   }
 }

@@ -1,11 +1,15 @@
 # c_nginx (NPM) ile aynı harici ağ — Proxy Host: http://c_hektar:3007, şema http
 # Sunucuda: mevcut proxy_net kullanılır (docker network ls).
+name: hektar-website
 services:
   c_hektar:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: hektar-website:latest
     container_name: c_hektar
     restart: unless-stopped
+    stop_grace_period: 10s
     ports:
       - "3007:3007"
     networks:

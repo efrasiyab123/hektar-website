@@ -1,5 +1,5 @@
 # Statik hektar sitesi — container adı: c_hektar | Nginx Proxy Manager hedefi: http://c_hektar:3007
-FROM nginx:1.25-alpine
+FROM nginx:1.27-alpine
 
 RUN rm -f /etc/nginx/conf.d/default.conf
 
