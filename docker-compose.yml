@@ -1,5 +1,5 @@
-# c_nginx (NPM) ile aynı harici ağ — Proxy Host: http://c_hektar:3006, şema http
-# Sunucuda bir kez: ağ yoksa oluşturulmaz; mevcut proxy_net kullanılır (docker network ls).
+# c_nginx (NPM) ile aynı harici ağ — Proxy Host: http://c_hektar:3007, şema http
+# Sunucuda: mevcut proxy_net kullanılır (docker network ls).
 services:
   c_hektar:
     build: .
@@ -7,7 +7,7 @@ services:
     container_name: c_hektar
     restart: unless-stopped
     ports:
-      - "3006:3006"
+      - "3007:3007"
     networks:
       - proxy_net
 

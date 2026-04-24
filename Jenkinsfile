@@ -7,7 +7,7 @@ pipeline {
         // npm.newworldemlak altyapındaki isim: diğer servislerle aynı Docker ağına ekleyin
         IMAGE_NAME        = 'hektar-website'
         CONTAINER_NAME    = 'c_hektar'
-        PUBLISH_PORT      = '3006'
+        PUBLISH_PORT      = '3007'
     }
 
     stages {
@@ -44,6 +44,7 @@ pipeline {
                     docker stop ${CONTAINER_NAME} 2>/dev/null || true
                     docker rm ${CONTAINER_NAME} 2>/dev/null || true
                     docker run -d --name ${CONTAINER_NAME} \\
+                        --network proxy_net \\
                         --restart unless-stopped \\
                         -p ${PUBLISH_PORT}:${PUBLISH_PORT} \\
                         ${IMAGE_NAME}:latest
