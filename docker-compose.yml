@@ -1,5 +1,5 @@
-# Sunucudaki NPM ağına bağlamak için: docker network ls ile proxy ağını bulun, örn.:
-#   docker network connect <ornek_proxy_network> c_hektar
+# c_nginx (NPM) ile aynı harici ağ — Proxy Host: http://c_hektar:3006, şema http
+# Sunucuda bir kez: ağ yoksa oluşturulmaz; mevcut proxy_net kullanılır (docker network ls).
 services:
   c_hektar:
     build: .
@@ -8,3 +8,10 @@ services:
     restart: unless-stopped
     ports:
       - "3006:3006"
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true
+    name: proxy_net
