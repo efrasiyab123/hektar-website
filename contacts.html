@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>İletişim Bilgileri | Hektar Yapı</title>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+
+        <link rel="stylesheet" href="css/contacts.min.css" />
+        <style>
+            .contact-form-section {
+                padding-top: 40px;
+            }
+            .contact-form-wrap {
+                border: 1px solid #e0e0e0;
+                padding: 28px;
+                background: #fff;
+                max-width: 980px;
+                margin: 0 auto;
+                border-radius: 4px;
+            }
+            .contact-form-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+            .contact-form-wrap .field {
+                margin-bottom: 0;
+                border: 1px solid #d9dee3;
+                background: #fafbfc;
+                color: #162739;
+                padding: 14px 16px;
+            }
+            .contact-form-wrap .field::placeholder {
+                color: #6f7b88;
+                opacity: 1;
+            }
+            .contact-form-wrap .field:focus {
+                border-color: #0da574;
+                background: #fff;
+            }
+            .contact-form-grid textarea {
+                grid-column: 1 / -1;
+                min-height: 150px;
+            }
+            .contact-form-wrap .btn {
+                width: fit-content !important;
+                margin-top: 18px;
+                min-width: 190px;
+            }
+            .contact-form-note {
+                display: block;
+                margin-top: 12px;
+                color: #5e6872;
+                font-size: 14px;
+            }
+            .info_data-card {
+                height: 100%;
+            }
+            .info_data-card .wrapper {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            @media (max-width: 1023px) {
+                .contact-form-wrap {
+                    max-width: 100%;
+                    padding: 20px;
+                }
+                .contact-form-grid {
+                    grid-template-columns: 1fr;
+                }
+                .contact-form-wrap .btn {
+                    width: 100% !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header" data-page="contacts" data-page-parent="contacts">
+            <div class="container d-flex">
+                <a class="brand" href="index.html">
+                    <img class="brand_logo" src="svg/logo.svg" alt="Axial Construct" />
+                </a>
+                                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="index.html"><span class="nav-item_text">Anasayfa</span></a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="projects.html"><span class="nav-item_text">Projeler</span></a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="services.html"><span class="nav-item_text">Grup Şirketler</span></a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="about.html"><span class="nav-item_text">Hektar Hikayesi</span></a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="team.html"><span class="nav-item_text">Biz Kimiz</span></a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="blog.html"><span class="nav-item_text">Medya</span></a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="contacts.html"><span class="nav-item_text">İletişim</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <button
+                    class="header_trigger"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                    aria-expanded="false"
+                >
+                    <span class="line line--short"></span>
+                    <span class="line"></span>
+                    <span class="line line--short"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </header>
+        <header class="page primary-bg">
+            <div class="container">
+                <div class="section_header">
+                    <span class="subtitle subtitle--extended">Bize Ulaşın</span>
+                    <h1 class="title">İletişim Bilgileri</h1>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs_item">
+                            <a href="index.html">Anasayfa</a>
+                        </li>
+                        <li class="breadcrumbs_item">
+                            <span>Kurumsal</span>
+                        </li>
+                        <li class="breadcrumbs_item breadcrumbs_item--current">
+                            <span>İletişim Bilgileri</span>
+                        </li>
+                    </ul>
+                    <a class="btn" href="index.html" style="margin-top: 20px">Geri Dön</a>
+                </div>
+            </div>
+            <div class="media">
+                <picture>
+                    <source data-srcset="img/plan.webp" srcset="img/plan.webp" type="image/webp" />
+                    <img class="lazy" data-src="img/plan.webp" src="img/plan.webp" alt="İletişim görseli" />
+                </picture>
+            </div>
+        </header>
+        <!-- contacts content start  -->
+        <main>
+            <section class="info section-nopb">
+                <div class="container">
+                    <div class="info_data">
+                        <div class="info_header section_header">
+                            <span class="subtitle" data-aos="fade-right">İletişim Bilgileri</span>
+                            <h2 class="title" data-aos="fade-right" data-aos-delay="30">
+                                <span class="highlight">Bize</span> Ulaşın
+                            </h2>
+                        </div>
+                        <div class="info_data-card" data-aos="fade-left">
+                            <div class="wrapper">
+                                <i class="icon-location icon"></i>
+                                <h4 class="title">Merkez</h4>
+                                <span class="content">Sarıyakup Mahallesi, Taberdar Sokak No:3/2 Karatay-KONYA</span>
+                            </div>
+                        </div>
+                        <div class="info_data-card" data-aos="fade-left" data-aos-delay="20">
+                            <div class="wrapper">
+                                <i class="icon-call icon"></i>
+                                <h4 class="title">Telefon</h4>
+                                <span class="content d-flex flex-column">
+                                    <a href="tel:+903323529999" class="link">+90 332 352 99 99</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="info_data-card" data-aos="fade-left" data-aos-delay="40">
+                            <div class="wrapper">
+                                <i class="icon-inbox icon"></i>
+                                <h4 class="title">E-Mail</h4>
+                                <span class="content d-flex flex-column">
+                                    <a href="mailto:bilgi@hektaryapi.com" class="link">bilgi@hektaryapi.com</a>
+                                    <a href="mailto:hektaryapi@gmail.com" class="link">hektaryapi@gmail.com</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts_map">
+                        <iframe
+                            title="Hektar Yapı Konum"
+                            src="https://www.google.com/maps?q=Sarıyakup%20Mahallesi%20Taberdar%20Sokak%20No:3/2%20Karatay%20KONYA&output=embed"
+                            width="100%"
+                            height="420"
+                            style="border: 0"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="section contact-form-section">
+                <div class="container">
+                    <div class="section_header">
+                        <span class="subtitle">İletişim Formu</span>
+                        <h2 class="title"><span class="highlight">Bize</span> Mesaj Gönderin</h2>
+                    </div>
+                    <form class="contact-form-wrap" action="mailto:bilgi@hektaryapi.com" method="post" enctype="text/plain">
+                        <div class="contact-form-grid">
+                            <input class="field" type="text" name="ad_soyad" placeholder="Ad Soyad" required />
+                            <input class="field" type="tel" name="telefon" placeholder="Telefon" required />
+                            <input class="field" type="email" name="eposta" placeholder="E-Posta" required />
+                            <input class="field" type="text" name="konu" placeholder="Konu" />
+                            <textarea class="field" name="mesaj" placeholder="Mesajınız" required></textarea>
+                        </div>
+                        <button class="btn" type="submit">Mesaj Gönder</button>
+                        <span class="contact-form-note">Form gönderildiğinde varsayılan e-posta uygulamanız açılır ve mesaj bize iletilir.</span>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- contacts content end  -->
+        <footer class="footer primary-bg">
+            <div class="container">
+                <div class="footer_main">
+                    <div class="footer_main-block">
+                        <a class="brand" href="index.html">
+                            <img class="brand_logo" src="svg/logo.svg" alt="Axial Construct" />
+                        </a>
+                        <p class="footer_main-block_subtitle footer_main-block_subtitle--brand">
+                            Hektar Yapı ile güvenilir, kaliteli ve sürdürülebilir yapılar inşa ediyoruz.
+                        </p>
+                    </div>
+                    <div class="footer_main-block">
+                        <h4 class="footer_main-block_title">İletişim Bilgileri</h4>
+                        <div class="group-wrapper">
+                            <i class="icon-call icon"></i>
+                            <div class="group">
+                                <a href="tel:+903323529999">+90 332 352 99 99</a>
+                            </div>
+                        </div>
+                        <div class="group-wrapper">
+                            <i class="icon-location icon"></i>
+                            <div class="group">
+                                <span>Merkez: Sarıyakup Mahallesi, Taberdar Sokak No:3/2 Karatay-KONYA</span>
+                                <span>Şantiye: Büyükkovanağzı Mah. 26763-16 Parsel Meram / KONYA</span>
+                            </div>
+                        </div>
+                        <div class="group-wrapper">
+                            <i class="icon-inbox icon"></i>
+                            <div class="group">
+                                <a href="mailto:bilgi@hektaryapi.com">bilgi@hektaryapi.com</a>
+                                <a href="mailto:hektaryapi@gmail.com">hektaryapi@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_main-block">
+                        <h4 class="footer_main-block_title">Kurumsal</h4>
+                        <ul class="footer_main-block_nav">
+                            <li class="list-item">
+                                <a class="nav-link link" href="about.html" data-page="about">
+                                    <i class="icon-chevron_right icon"></i> Hakkımızda
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav-link link" href="services.html" data-page="services">
+                                    <i class="icon-chevron_right icon"></i> Grup Şirketler
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav-link link" href="projects.html" data-page="projects">
+                                    <i class="icon-chevron_right icon"></i> Projeler
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav-link link" href="blog.html" data-page="blog">
+                                    <i class="icon-chevron_right icon"></i> Medya
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_main-block">
+                        <h4 class="footer_main-block_title">Bültenimize Abone Olun</h4>
+                        <p class="footer_main-block_subtitle footer_main-block_subtitle--newsletter">
+                            Şirketimizdeki güncel gelişmeleri ve duyuruları takip edin.
+                        </p>
+                        <form
+                            class="footer_main-block_form"
+                            data-type="newsletter"
+                            action="#"
+                            method="POST"
+                            name="newsletterForm"
+                            id="newsletterForm"
+                        >
+                            <input
+                                class="field required"
+                                name="newsletterEmail"
+                                id="newsletterEmail"
+                                type="text"
+                                placeholder="E-Posta"
+                                data-type="email"
+                            />
+                            <button class="btn btn--submit btn--static" type="submit" aria-label="Abone Ol">
+                                <span class="text">Abone Ol</span>
+                                <i class="icon-paperplane icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer_secondary">
+                    <p class="footer_secondary-copyright">
+                        <span>Hektar Yapı &copy; <span id="currentYear"></span></span>
+                        <span>Tüm hakları saklıdır.</span>
+                    </p>
+                    <ul class="socials">
+                        <li class="socials_item">
+                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="socials_item">
+                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="socials_item">
+                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="socials_item">
+                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <i class="icon-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <button id="scrollTrigger" type="button">
+            <i class="icon icon-arrow_right"></i>
+        </button>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <script src="js/common.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+# Sunucudaki NPM ağına bağlamak için: docker network ls ile proxy ağını bulun, örn.:
+#   docker network connect <ornek_proxy_network> c_hektar
+services:
+  c_hektar:
+    build: .
+    image: hektar-website:latest
+    container_name: c_hektar
+    restart: unless-stopped
+    ports:
+      - "3006:3006"

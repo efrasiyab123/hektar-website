@@ -1,0 +1,22 @@
+# Bağımlılık ve sürüm kontrol
+node_modules
+.git
+.gitattributes
+
+# Docker / CI
+Dockerfile
+docker-compose*.yml
+.dockerignore
+Jenkinsfile
+
+# Sadece build / geliştirme — statik sitede sunulmaz
+package.json
+yarn.lock
+scss
+sourcemaps
+
+# IDE
+.cursor
+.vscode
+*.md
+.DS_Store
